@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="automatica-manifest.json" />
+    <None Remove="Resources\RuleTemplateName-de.json" />
+    <None Remove="Resources\RuleTemplateName-en.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="automatica-manifest.json" />
+    <EmbeddedResource Include="Resources\RuleTemplateName-de.json" />
+    <EmbeddedResource Include="Resources\RuleTemplateName-en.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Automatica.Core.Rule" Version="0.3.0.17" />
+  </ItemGroup>
+
+</Project>
